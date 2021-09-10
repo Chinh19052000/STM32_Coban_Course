@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"adc_pwm_servo\startup_stm32f103xb.o"
+"adc_pwm_servo\main.o"
+"adc_pwm_servo\gpio.o"
+"adc_pwm_servo\adc.o"
+"adc_pwm_servo\tim.o"
+"adc_pwm_servo\stm32f1xx_it.o"
+"adc_pwm_servo\stm32f1xx_hal_msp.o"
+"adc_pwm_servo\stm32f1xx_hal_gpio_ex.o"
+"adc_pwm_servo\stm32f1xx_hal_adc.o"
+"adc_pwm_servo\stm32f1xx_hal_adc_ex.o"
+"adc_pwm_servo\stm32f1xx_hal.o"
+"adc_pwm_servo\stm32f1xx_hal_rcc.o"
+"adc_pwm_servo\stm32f1xx_hal_rcc_ex.o"
+"adc_pwm_servo\stm32f1xx_hal_gpio.o"
+"adc_pwm_servo\stm32f1xx_hal_dma.o"
+"adc_pwm_servo\stm32f1xx_hal_cortex.o"
+"adc_pwm_servo\stm32f1xx_hal_pwr.o"
+"adc_pwm_servo\stm32f1xx_hal_flash.o"
+"adc_pwm_servo\stm32f1xx_hal_flash_ex.o"
+"adc_pwm_servo\stm32f1xx_hal_exti.o"
+"adc_pwm_servo\stm32f1xx_hal_tim.o"
+"adc_pwm_servo\stm32f1xx_hal_tim_ex.o"
+"adc_pwm_servo\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "ADC_PWM_Servo\ADC_PWM_Servo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADC_PWM_Servo.map" -o ADC_PWM_Servo\ADC_PWM_Servo.axf
